@@ -11,4 +11,5 @@ export const AppState = reactive({
 
   previousPage: null,
   nextPage: null,
+  activeProfile: null,
 })
