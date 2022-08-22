@@ -23,16 +23,19 @@
         </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
+      <SearchForm/>
       <Login />
     </div>
   </nav>
 </template>
 
 <script>
+import SearchForm from './SearchForm.vue';
 export default {
-  setup() {
-    return {};
-  },
+    setup() {
+        return {};
+    },
+    components: { SearchForm }
 };
 </script>
 

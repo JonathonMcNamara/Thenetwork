@@ -32,7 +32,7 @@ export default {
     setup() {
         onMounted(async () => {
             try {
-                await postsService.getPosts();
+            await postsService.getPosts();
             }
             catch (error) {
                 logger.error("[Getting Posts]", error);
@@ -44,14 +44,12 @@ export default {
             nextPage: computed(() => AppState.nextPage),
             previousPage: computed(() => AppState.previousPage),
             async changePage(url) {
-                await postsService.changePage(url);
-                logger.error("[Changing Url]", error);
+                await postsService.changePage(url)
             },
             async createPost() {
-                await postsService.createPost();
-                logger.error("[Creating Post]", error);
+                await postsService.createPost()
             }
-        };
+        }
     },
     components: { PostForm }
 }
