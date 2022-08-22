@@ -51,7 +51,6 @@ export default {
 .right-bar{
   height: 100vh;
   width: 200px;
-  margin-right: 0;
 }
 
 

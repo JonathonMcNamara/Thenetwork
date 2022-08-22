@@ -1,14 +1,14 @@
 <template>
 <div class="container">
   <div class="row">
-    <div class=" offset-3 col-6">
+    <div class=" offset-3 col-md-6">
       <PostForm/>
     </div>
   </div>
 </div>
 <div class="container">
   <div class="row">
-    <div class=" offset-3 col-6" v-for="p in posts" :key="p.id">
+    <div class=" offset-3 col-md-6" v-for="p in posts" :key="p.id">
       <PostCard :post="p"/>
     </div>
   </div>
