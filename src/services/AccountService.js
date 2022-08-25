@@ -14,7 +14,7 @@ class AccountService {
   }
 
   async editAccount(accountInfo){
-    const res = bcwSandbox.put('account',accountInfo)
+    const res = await bcwSandbox.put('account',accountInfo)
     AppState.account = new Account(res.data)
   }
 }
